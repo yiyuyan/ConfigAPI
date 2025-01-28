@@ -8,6 +8,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/ConfigAPI.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/ConfigAPI.neoforge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/cn.ksmcbrigade.ConfigAPI.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/cn.ksmcbrigade.ConfigAPI.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/cn.ksmcbrigade.ConfigAPI.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/cn.ksmcbrigade.ConfigAPI.fabric.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/cn.ksmcbrigade.ConfigAPI.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/cn.ksmcbrigade.ConfigAPI.fabric.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/cn.ksmcbrigade.ConfigAPI.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/cn.ksmcbrigade.ConfigAPI.forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/cn.ksmcbrigade.ConfigAPI.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/cn.ksmcbrigade.ConfigAPI.forge.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/cn.ksmcbrigade.ConfigAPI.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/cn.ksmcbrigade.ConfigAPI.neoforge.main.iml" />
     </modules>
   </component>
 </project>

@@ -24,7 +24,7 @@ public class ConfigList extends ContainerObjectSelectionList<Entry> {
             if(value instanceof String){
                 this.addEntry(new StringEntry(this,this.config,s));
             }
-            else if((value instanceof Number)){
+            else if((value instanceof Number) || (value instanceof Boolean)){
                 this.addEntry(new ClassTypeEntry(this,this.config,s,value.getClass()));
             }
         }

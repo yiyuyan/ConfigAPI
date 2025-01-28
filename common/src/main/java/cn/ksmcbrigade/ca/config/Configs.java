@@ -20,8 +20,7 @@ public class Configs {
                             }
                             if(!new String(Files.readAllBytes(config.config.toPath())).equals(config.get().toString()) && !config.saving){
                                 System.out.println("The config is different from the local config file: "+config.config.getPath());
-                                config.data.clear();
-                                config.load();
+                                config.reload();
                             }
                         } catch (Exception e) {
                             e.printStackTrace();

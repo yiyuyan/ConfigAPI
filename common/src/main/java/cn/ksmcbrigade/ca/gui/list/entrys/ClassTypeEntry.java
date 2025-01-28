@@ -28,6 +28,7 @@ public class ClassTypeEntry extends Entry{
         this.key = key;
         this.type = type;
         this.box = new EditBox(Minecraft.getInstance().font,50,20, Component.literal(String.valueOf(config.get(key))));
+        this.box.setValue(String.valueOf(this.config.get(key)));
         this.box.setFilter(context-> !(CAST(context) instanceof String));
         if(type==Character.class){
             this.box.setMaxLength(1);
