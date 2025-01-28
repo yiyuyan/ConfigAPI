@@ -30,7 +30,7 @@ public class Config {
     }
 
     public Config(String configFile){
-        this(new File(configFile),(s, o)->{});
+        this(configFile,(s, o)->{});
     }
 
     JsonObject get() throws IllegalAccessException, NoSuchFieldException {
