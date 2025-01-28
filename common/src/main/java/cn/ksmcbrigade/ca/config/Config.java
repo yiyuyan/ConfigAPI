@@ -12,7 +12,7 @@ import java.util.function.BiConsumer;
 public class Config {
 
     public final File config;
-    final Map<String,Object> data = new HashMap<>();
+    Map<String,Object> data = new HashMap<>();
     public final BiConsumer<String,Object> callback;
     boolean saving = false;
     public boolean initing = false;
@@ -21,6 +21,15 @@ public class Config {
         this.config = configFile;
         this.callback = callback;
         this.initing = initing;
+        Configs.configs.add(this);
+        Configs.startWatchDog();
+    }
+
+    Config(File configFile,BiConsumer<String,Object> callback,boolean initing,Map<String,Object> data){
+        this.config = configFile;
+        this.callback = callback;
+        this.initing = initing;
+        this.data = data;
         Configs.configs.add(this);
         Configs.startWatchDog();
     }

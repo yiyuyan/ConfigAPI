@@ -34,11 +34,7 @@ public class ConfigBuilder {
     }
 
     public Config buildOnly(){
-        Config config = new Config(this.file,this.callback,this.initing);
-        for (String s : this.data.keySet()) {
-            config.put(s,this.data.get(s));
-        }
-        return config;
+        return new Config(this.file, this.callback, this.initing, this.data);
     }
 
     public Config build() throws IOException, IllegalAccessException, NoSuchFieldException {

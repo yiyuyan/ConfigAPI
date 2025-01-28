@@ -12,7 +12,7 @@ public class Configs {
         if(watchdog==null){
             watchdog = new Thread(()->{
                 while (!stoppedWatchDog){
-                    for (Config config : configs) {
+                    for (Config config : new ArrayList<>(configs)) {
                         try {
                             Thread.sleep(waitingTime);
                         } catch (InterruptedException e) {
