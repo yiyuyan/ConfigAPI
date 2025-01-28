@@ -14,22 +14,23 @@ public class Configs {
                 while (!stoppedWatchDog){
                     for (Config config : configs) {
                         try {
+                            Thread.sleep(waitingTime);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            if(config.initing || config.saving) continue;
                             if(!config.config.exists()){
                                 config.save(false);
                                 continue;
                             }
-                            if(!new String(Files.readAllBytes(config.config.toPath())).equals(config.get().toString()) && !config.saving){
+                            if(!new String(Files.readAllBytes(config.config.toPath())).equals(config.get().toString())){
                                 System.out.println("The config is different from the local config file: "+config.config.getPath());
                                 config.reload();
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-                    }
-                    try {
-                        Thread.sleep(waitingTime);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
                     }
                 }
             },"ConfigWatchDog");

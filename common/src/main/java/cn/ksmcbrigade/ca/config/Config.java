@@ -15,12 +15,18 @@ public class Config {
     final Map<String,Object> data = new HashMap<>();
     public final BiConsumer<String,Object> callback;
     boolean saving = false;
+    public boolean initing = false;
 
-    public Config(File configFile,BiConsumer<String,Object> callback){
+    public Config(File configFile,BiConsumer<String,Object> callback,boolean initing){
         this.config = configFile;
         this.callback = callback;
+        this.initing = initing;
         Configs.configs.add(this);
         Configs.startWatchDog();
+    }
+
+    public Config(String configFile,BiConsumer<String,Object> callback){
+        this(new File(configFile),callback,false);
     }
 
     public Config(String configFile){

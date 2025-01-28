@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61ff4889-6073-417c-9339-592711b5ef6b" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/common/ConfigAPI.common.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/common/ConfigAPI.common.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/fabric/ConfigAPI.fabric.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/fabric/ConfigAPI.fabric.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/neoforge/ConfigAPI.neoforge.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/neoforge/ConfigAPI.neoforge.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Fabric_Client___fabric__fabric.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Fabric_Client___fabric__fabric.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Fabric_Server___fabric__fabric.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Fabric_Server___fabric__fabric.xml" afterDir="false" />
+    <list default="true" id="61ff4889-6073-417c-9339-592711b5ef6b" name="更改" comment="UPDATE 1.1 VERSION,ADD CONFIG CALLBACK AND FIX THE CONFIG GUI.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/ConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/ConfigBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Configs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/ConfigList.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/ConfigList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ButtonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ButtonEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ClassTypeEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ClassTypeEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,18 +68,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "yiyuyan"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yiyuyan&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/yiyuyan/ConfigAPI/",
-    "accountId": "9afbebe5-7e44-49e1-9d77-1bc1bf75da96"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yiyuyan/ConfigAPI/&quot;,
+    &quot;accountId&quot;: &quot;9afbebe5-7e44-49e1-9d77-1bc1bf75da96&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -103,23 +89,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor": "Run",
-    "Gradle.ConfigAPI [:forge:createMcpToSrg].executor": "Run",
-    "Gradle.ConfigAPI [build].executor": "Run",
-    "Gradle.ConfigAPI [runClient].executor": "Run",
-    "Gradle.ConfigAPI [wrapper genIntellijRuns].executor": "Run",
-    "Gradle.D:/CommonMods/ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor": "Run",
-    "Gradle.构建 ConfigAPI.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/CommonMod/ConfigAPI/common/src/main/java/cn/ksmcbrigade/ca",
-    "settings.editor.selected.configurable": "build.tools",
-    "应用程序.Fabric Client (:fabric).executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [:forge:createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [wrapper genIntellijRuns].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.D:/CommonMods/ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.构建 ConfigAPI.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/NeoForgeMods/ExampleClient&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;应用程序.Fabric Client (:fabric).executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CommonMod\ConfigAPI\common\src\main\java\cn\ksmcbrigade\ca" />
@@ -257,6 +243,30 @@
       <option name="presentableId" value="Default" />
       <updated>1737860692003</updated>
     </task>
+    <task id="LOCAL-00001" summary="UPDATE 1.1 VERSION,ADD CONFIG CALLBACK AND FIX THE CONFIG GUI.">
+      <option name="closed" value="true" />
+      <created>1738057433838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738057433838</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="UPDATE 1.1 VERSION,ADD CONFIG CALLBACK AND FIX THE CONFIG GUI." />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE 1.1 VERSION,ADD CONFIG CALLBACK AND FIX THE CONFIG GUI." />
   </component>
 </project>

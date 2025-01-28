@@ -9,6 +9,7 @@ import java.util.function.BiConsumer;
 public class ConfigBuilder {
 
     private File file;
+    public boolean initing = false;
     private BiConsumer<String,Object> callback = (s, o)->{};
     public Map<String,Object> data = new HashMap<>();
 
@@ -33,7 +34,7 @@ public class ConfigBuilder {
     }
 
     public Config buildOnly(){
-        Config config = new Config(this.file,this.callback);
+        Config config = new Config(this.file,this.callback,this.initing);
         for (String s : this.data.keySet()) {
             config.put(s,this.data.get(s));
         }
