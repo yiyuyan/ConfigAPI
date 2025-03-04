@@ -22,6 +22,21 @@ public class CommonClass {
             Constants.LOG.info("Hello to ca");
         }
 
+        //FOR TEST
+        /*ConfigBuilder builder = new ConfigBuilder("666-test.json",true);
+        JsonArray t = new JsonArray();
+        for (int i = 0; i < 100; i++) {
+            t.add(RandomStringUtils.randomNumeric(10));
+        }
+        builder.data.put("testArr",t);
+        builder.data.put("tesTST","it just a string,yeah!");
+        builder.data.put("testBool",false);
+        try {
+            builder.build();
+        } catch (IOException | IllegalAccessException | NoSuchFieldException e) {
+            e.printStackTrace();
+        }*/
+
         //test
         /*for (int i = 0; i < 10; i++) {
             ConfigBuilder builder = new ConfigBuilder(RandomStringUtils.randomNumeric(4)+".json",true);

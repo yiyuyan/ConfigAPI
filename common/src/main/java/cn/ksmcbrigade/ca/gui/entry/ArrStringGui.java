@@ -10,28 +10,31 @@ import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
 
-public class StringGui extends Screen {
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class ArrStringGui extends Screen {
     private static final Component ENTER_IP_LABEL = Component.literal("str");
     private final Config config;
     private final String key;
+    private final int keyKey;
+    private String keyContext;
     private EditBox ipEdit;
     private final Screen lastScreen;
 
-    public StringGui(Screen pLastScreen,Config config,String key) {
+    public ArrStringGui(Screen pLastScreen, Config config, String key,int keyKey) {
         super(Component.literal("Edit String Config"));
         this.lastScreen = pLastScreen;
         this.config = config;
         this.key = key;
+        this.keyKey = keyKey;
+        this.keyContext = config.getArray(key).get(keyKey);
     }
 
     protected void init() {
         this.ipEdit = new EditBox(this.font, this.width / 2 - 100, 116, 200, 20, Component.literal("str"));
         this.ipEdit.setMaxLength(320);
-        try {
-            this.ipEdit.setValue(config.getString(key));
-        } catch (Exception e) {
-
-        }
+        this.ipEdit.setValue(keyContext);
         this.ipEdit.setResponder(this::updateSelectButtonStatus);
         this.addWidget(this.ipEdit);
         this.addRenderableWidget(Button.builder(CommonComponents.GUI_CANCEL, (p_95977_) -> {
@@ -54,7 +57,12 @@ public class StringGui extends Screen {
     }
 
     private void updateSelectButtonStatus(String c) {
-        this.config.put(key,c);
+        if(!c.equals(keyContext)){
+            ArrayList<String> arr = new ArrayList<>(this.config.getArray(key));
+            arr.set(keyKey,c);
+            this.config.put(key,arr);
+            this.keyContext = c;
+        }
     }
 
     public void render(@NotNull GuiGraphics pGuiGraphics, int pMouseX, int pMouseY, float pPartialTick) {

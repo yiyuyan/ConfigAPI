@@ -7,21 +7,39 @@ import java.io.IOException;
 import java.lang.reflect.Field;
 import java.nio.file.Files;
 import java.util.*;
+import java.util.function.BiConsumer;
 
 public class Config {
 
     public final File config;
-    final Map<String,Object> data = new HashMap<>();
+    Map<String,Object> data = new HashMap<>();
+    public final BiConsumer<String,Object> callback;
     boolean saving = false;
+    public boolean initing = false;
 
-    public Config(File configFile){
+    public Config(File configFile,BiConsumer<String,Object> callback,boolean initing){
         this.config = configFile;
+        this.callback = callback;
+        this.initing = initing;
         Configs.configs.add(this);
         Configs.startWatchDog();
     }
 
+    Config(File configFile,BiConsumer<String,Object> callback,boolean initing,Map<String,Object> data){
+        this.config = configFile;
+        this.callback = callback;
+        this.initing = initing;
+        this.data = data;
+        Configs.configs.add(this);
+        Configs.startWatchDog();
+    }
+
+    public Config(String configFile,BiConsumer<String,Object> callback){
+        this(new File(configFile),callback,false);
+    }
+
     public Config(String configFile){
-        this(new File(configFile));
+        this(configFile,(s, o)->{});
     }
 
     JsonObject get() throws IllegalAccessException, NoSuchFieldException {
@@ -95,11 +113,7 @@ public class Config {
                 }
             } else if (value.isJsonArray()) {
                 JsonArray array = value.getAsJsonArray();
-                ArrayList<String> list = new ArrayList<>();
-                for (JsonElement element : array) {
-                    list.add(element.getAsString());
-                }
-                data.put(entry.getKey(), list);
+                data.put(entry.getKey(), array);
             }
         }
     }
@@ -167,47 +181,47 @@ public class Config {
 
     public void put(String key, Object value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,String value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,Byte value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,int value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,boolean value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,long value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,double value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,float value){
         data.put(key,value);
-        s();
+        s(key,value);
     }
 
     public void put(String key,Enum<?> value){
         data.put(key,value.name());
-        s();
+        s(key,value);
     }
 
     public void put(String key,List<String> value){
@@ -216,7 +230,7 @@ public class Config {
             array.add(v);
         }
         data.put(key,array);
-        s();
+        s(key,value);
     }
 
     public Object get(String key){
@@ -267,6 +281,7 @@ public class Config {
 
     public List<String> getArray(String key){
         Object obj = data.get(key);
+        if(obj instanceof ArrayList arrayList) return (ArrayList<String>)arrayList;
         if(!(obj instanceof JsonArray)) throw new RuntimeException("Can't case the object value to json array.");
         ArrayList<String> arrayList = new ArrayList<>();
         for(JsonElement v:((JsonArray)obj)) arrayList.add(v.getAsString());
@@ -279,11 +294,22 @@ public class Config {
         return Enum.valueOf(e,(String)obj);
     }
 
-    private void s(){
+    private void s(String key,Object value){
         try {
+            this.callback.accept(key,value);
             save(true);
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void reload() throws IOException {
+        this.saving = true;
+        this.data.clear();
+        this.load();
+        for (String s : this.keySet()) {
+            this.callback.accept(s,this.get(s));
+        }
+        this.saving = false;
     }
 }

@@ -1,8 +1,8 @@
 package cn.ksmcbrigade.ca.gui.list.entrys;
 
 import cn.ksmcbrigade.ca.config.Config;
-import cn.ksmcbrigade.ca.gui.entry.StringGui;
-import cn.ksmcbrigade.ca.gui.list.ConfigList;
+import cn.ksmcbrigade.ca.gui.entry.ArrStringGui;
+import cn.ksmcbrigade.ca.gui.list.ArrayConfigList;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
@@ -10,28 +10,24 @@ import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarratableEntry;
 import net.minecraft.network.chat.Component;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class StringEntry extends Entry{
+public class ArrStringEntry extends Entry{
 
-    final ConfigList instance;
+    final ArrayConfigList instance;
     final Config config;
     final String key;
+    final int keyKey;
     final Button box;
 
-    public StringEntry(ConfigList instance, Config config, String key, @Nullable Runnable runnable){
+    public ArrStringEntry(ArrayConfigList instance, Config config, String key, int keyKey){
         this.instance = instance;
         this.config = config;
         this.key = key;
+        this.keyKey = keyKey;
         this.box = Button.builder(Component.literal("Edit"),(button -> {
-            if(runnable==null){
-                Minecraft.getInstance().setScreen(new StringGui(this.instance.configGui,this.config,this.key));
-            }
-            else{
-                runnable.run();
-            }
+            Minecraft.getInstance().setScreen(new ArrStringGui(this.instance.last,this.config,this.key,keyKey));
         })).size(50,20).build();
     }
 
@@ -51,7 +47,7 @@ public class StringEntry extends Entry{
         int j = pTop - 2;
         this.box.setPosition(i, j);
         this.box.render(pGuiGraphics, pMouseX, pMouseY, pPartialTick);
-        pGuiGraphics.drawString(Minecraft.getInstance().font, this.key, pLeft, pTop + pHeight / 2 - 4, -1);
+        pGuiGraphics.drawString(Minecraft.getInstance().font, this.key+"#"+(this.keyKey+1), pLeft, pTop + pHeight / 2 - 4, -1);
     }
 
     @Override

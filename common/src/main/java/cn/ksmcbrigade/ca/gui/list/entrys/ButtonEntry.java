@@ -26,7 +26,7 @@ public class ButtonEntry extends ContainerObjectSelectionList.Entry<ButtonEntry>
     @Override
     public void render(@NotNull GuiGraphics pGuiGraphics, int pIndex, int pTop, int pLeft, int pWidth, int pHeight, int pMouseX, int pMouseY, boolean pHovering, float pPartialTick) {
         int j = pTop - 2;
-        this.button.setPosition(pWidth/2,j);
+        this.button.setPosition(pWidth/2+50,j);
         this.button.render(pGuiGraphics, pMouseX, pMouseY, pPartialTick);
     }
 
