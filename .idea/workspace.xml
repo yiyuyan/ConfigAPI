@@ -4,42 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61ff4889-6073-417c-9339-592711b5ef6b" name="更改" comment="HOTFIX">
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/ArrayConfigGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/entry/ArrStringGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/ArrayConfigList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ArrStringEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/common/ConfigAPI.common.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/common/ConfigAPI.common.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/fabric/ConfigAPI.fabric.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/fabric/ConfigAPI.fabric.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/fabric/ConfigAPI.fabric.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/fabric/ConfigAPI.fabric.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/forge/ConfigAPI.forge.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/neoforge/ConfigAPI.neoforge.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/neoforge/ConfigAPI.neoforge.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Fabric_Server___fabric__fabric.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Fabric_Server___fabric__fabric.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="61ff4889-6073-417c-9339-592711b5ef6b" name="更改" comment="update 1.1.2 version,supported the type of arrayList configs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/ClientConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/ClientConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/CommonClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/CommonClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/ConfigBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/ConfigBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/config/Configs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/ConfigGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/ConfigGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/ConfigsGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/ConfigsGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/entry/StringGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/entry/StringGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/ButtonsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/ButtonsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/ConfigList.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/ConfigList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ButtonEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ButtonEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ClassTypeEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ClassTypeEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/StringEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/StringEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/mixin/KeyboardHandlerMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/mixin/KeyboardHandlerMixin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/mixin/OptionsMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/mixin/OptionsMixin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/ArrayConfigGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/ArrayConfigGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ArrStringEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/cn/ksmcbrigade/ca/gui/list/entrys/ArrStringEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,18 +39,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ConfigAPI" type="f1a62948:ProjectNode" />
-                <item name="fabric" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ConfigAPI" type="f1a62948:ProjectNode" />
-                <item name="fabric" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ConfigAPI" type="f1a62948:ProjectNode" />
-                <item name="fabric" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ConfigAPI" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="fabric" type="c8890929:TasksNode$1" />
               </path>
@@ -126,24 +93,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor": "Run",
-    "Gradle.ConfigAPI [:forge:createMcpToSrg].executor": "Run",
-    "Gradle.ConfigAPI [build].executor": "Run",
-    "Gradle.ConfigAPI [runClient].executor": "Run",
-    "Gradle.ConfigAPI [wrapper genIntellijRuns].executor": "Run",
-    "Gradle.ConfigAPI:fabric [runClient].executor": "Run",
-    "Gradle.D:/CommonMods/ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor": "Run",
-    "Gradle.构建 ConfigAPI.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/NeoForgeMods/ExampleClient",
-    "settings.editor.selected.configurable": "build.tools",
-    "应用程序.Fabric Client (:fabric).executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [:forge:createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI [wrapper genIntellijRuns].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConfigAPI:fabric [runClient].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.D:/CommonMods/ConfigAPI [:forge:createMcpToSrg :forge:createMcpToSrg :forge:createMcpToSrg].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.构建 ConfigAPI.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/NeoForgeMods/ExampleClient&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;应用程序.Fabric Client (:fabric).executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CommonMod\ConfigAPI\common\src\main\java\cn\ksmcbrigade\ca" />
@@ -156,7 +123,7 @@
       <recent name="cn.ksmcbrigade.ca.gui" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ConfigAPI:fabric [runClient]">
+  <component name="RunManager" selected="Gradle.ConfigAPI [build]">
     <configuration name="NeoForge Client (:neoforge)" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.neoforged.devlaunch.Main" />
       <module name="ConfigAPI.neoforge.main" />
@@ -290,10 +257,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ConfigAPI:fabric [runClient]" />
         <item itemvalue="Gradle.ConfigAPI [build]" />
-        <item itemvalue="Gradle.ConfigAPI [runServer]" />
         <item itemvalue="Gradle.ConfigAPI [runClient]" />
+        <item itemvalue="Gradle.ConfigAPI:fabric [runClient]" />
+        <item itemvalue="Gradle.ConfigAPI [runServer]" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738066360102</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update 1.1.2 version,supported the type of arrayList configs">
+      <option name="closed" value="true" />
+      <created>1741090970623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741090970623</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,6 +323,7 @@
     <MESSAGE value="UPDATE 1.1 VERSION,ADD CONFIG CALLBACK AND FIX THE CONFIG GUI." />
     <MESSAGE value="HOTFIX WATCH DOG THREAD" />
     <MESSAGE value="HOTFIX" />
-    <option name="LAST_COMMIT_MESSAGE" value="HOTFIX" />
+    <MESSAGE value="update 1.1.2 version,supported the type of arrayList configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1.1.2 version,supported the type of arrayList configs" />
   </component>
 </project>
